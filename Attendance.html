@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class Attendance System</title>
+    <link rel="stylesheet" type="text/css" href="General.css">
+</head>
+<body>
+    <!-- Rest of the HTML code remains the same -->
+    
+    <nav>
+        <ul>
+            <li><a href="Attendance System.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <form action="backend.php" method="POST">
+        <label for="studentID">Student ID:</label>
+        <input type="text" id="studentID" name="studentID" required>
+
+        <label for="courseID">Course ID:</label>
+        <input type="text" id="courseID" name="courseID" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="status">Status:</label>
+        <select id="status" name="status" required>
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+        </select>
+
+        <button type="submit">Submit Attendance</button>
+    </form>
+</body>
+</html>
